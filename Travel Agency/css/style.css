@@ -1,0 +1,157 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    width: 100%;
+    box-sizing: border-box;
+}
+nav {
+    padding: 0 50px;
+    height: 100px;
+    display: flex; 
+    justify-content: space-between; /*раскидываем логотип и меню по разным краям*/
+    align-items: center; /*размещаем по центру*/
+}
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.menu a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.menu a:hover {
+    color: #05A88D;    
+}
+.header-logo {
+    color: #05A88D;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+.sign_up, .login {
+    font-size: 16px;
+    background-color: #fff;
+    color: #05A88D;
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+    margin-left: 65px;
+}
+button:hover {
+    cursor: pointer;
+}
+.sign_up {
+    border: #05A88D 2px solid;
+}
+
+
+/* CARD CONFIGURATION */
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    font-family: 'Exo 2', sans-serif;
+    width: 200px;
+    height: 322px;
+    /* border: 1px red solid; */
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    margin: 70px;
+    border-radius: 10px;
+}
+.card__image img {
+    width: 200px;
+    height: 142.36px;
+    border-radius: 10px 10px 0px 0px;
+}
+.card-content {
+    display: flex;  
+}
+.card__title {
+   text-align: center;
+   margin-top: 16px;
+   font-weight: bold;
+   font-size: 12px;
+}
+.card__btn {
+    background-color: #2797B2;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 98px;
+    padding: 10px;
+    margin: 16px 52px;
+    border: none;
+}
+.card__text {
+    margin-top: 16px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* FOOTER CONFIGURATION */
+.footer{
+    font-family: 'Exo 2', sans-serif;
+    flex: 0 0 auto;
+    padding: 50px 40px;
+    height: 260px;
+    background-color: #05A88D;
+}            
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px #FFF solid;
+}         
+.logo {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F1E67D;
+}
+.text {
+    font-size: 14px;
+    font-weight: light;
+    margin-top: 40px;
+    color: #FFF;
+}
+.contact {
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.phone {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F1E67D;
+}
+.address {
+    text-align: right;
+    font-weight: light;
+    font-size: 14px;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer__bottom {
+    font-size: 12px;
+    font-weight: light;
+    margin-top: 50px;
+    color: white;
+}
