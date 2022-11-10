@@ -180,8 +180,12 @@ input:hover {
     color: #817070;
     border: #fff;
     width: 129px;
+    transition: 0.3s;
 }
 .submit-button:hover {
+    background-color: rgb(250, 242, 242);
+    border-radius: 4px;
+    transform: scale(1.1);
     cursor: pointer;
 }
 form {
