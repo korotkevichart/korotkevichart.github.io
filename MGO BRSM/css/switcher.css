@@ -1,0 +1,35 @@
+
+.switcher {
+    position: relative;
+    width: 120px;
+    height: 280px; /* Уменьшенная высота */
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.number {
+    position: absolute;
+    width: 100%;
+    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+.top {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 64px;
+    top: 20px;
+}
+.middle {
+    color: black;
+    font-size: 94px;
+    top: 104px; /* 64 (верх) + 20 (отступ) */
+}
+.bottom {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 64px;
+    top: 218px; /* 94 (средняя) + 20 (отступ) */
+}
+.fade-out {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
