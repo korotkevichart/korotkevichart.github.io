@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Switcher</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 120px;
+            height: 280px; /* Уменьшенная высота */
+            overflow: hidden;
+            text-align: center;
+        }
+        .number {
+            position: absolute;
+            width: 100%;
+            transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .top {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 64px;
+            top: 20px;
+        }
+        .middle {
+            color: black;
+            font-size: 94px;
+            top: 104px; /* 64 (верх) + 20 (отступ) */
+        }
+        .bottom {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 64px;
+            top: 218px; /* 94 (средняя) + 20 (отступ) */
+        }
+        .fade-out {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="switcher"></div>
+    <script>
+        const numbers = ['01', '02', '03', '04'];
+        let currentIndex = 0;
+
+        function updatePositions() {
+            const container = document.getElementById('switcher');
+            container.innerHTML = '';
+
+            const topNum = document.createElement('div');
+            topNum.className = 'number top';
+            topNum.textContent = currentIndex > 0 ? numbers[currentIndex - 1] : '';
+            
+            const middleNum = document.createElement('div');
+            middleNum.className = 'number middle';
+            middleNum.textContent = numbers[currentIndex];
+            
+            const bottomNum = document.createElement('div');
+            bottomNum.className = 'number bottom';
+            bottomNum.textContent = currentIndex < numbers.length - 1 ? numbers[currentIndex + 1] : '';
+
+            if (currentIndex > 0) topNum.addEventListener('click', moveBackward);
+            if (currentIndex < numbers.length - 1) bottomNum.addEventListener('click', moveForward);
+
+            container.appendChild(topNum);
+            container.appendChild(middleNum);
+            container.appendChild(bottomNum);
+        }
+
+        function moveForward() {
+            if (currentIndex < numbers.length - 1) {
+                const elements = document.querySelectorAll('.number');
+                elements[0].classList.add('fade-out'); 
+                elements[1].classList.replace('middle', 'top');
+                elements[2].classList.replace('bottom', 'middle');
+
+                currentIndex++;
+                setTimeout(updatePositions, 300);
+            }
+        }
+
+        function moveBackward() {
+            if (currentIndex > 0) {
+                const elements = document.querySelectorAll('.number');
+                elements[2].classList.add('fade-out'); 
+                elements[1].classList.replace('middle', 'bottom');
+                elements[0].classList.replace('top', 'middle');
+
+                currentIndex--;
+                setTimeout(updatePositions, 300);
+            }
+        }
+
+        updatePositions();
+    </script>
+</body>
+</html>

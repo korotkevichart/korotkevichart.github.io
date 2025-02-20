@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/switcher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <title>MGO BRSM</title>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <nav role="navigation" class="header-navigation">
+        <div class="container">
+            <div class="nav-content">
+                <img src="../MGO BRSM/icons/золотой логотип.svg" alt="МИНСК БРСМ" class="header-logo">
+                <ul class="nav_menu">
+                    <li class="nav_element"><a href="#" class="nav_link">О НАС</a></li>
+                    <li class="nav_element"><a href="#" class="nav_link">НАШИ ПРОЕКТЫ</a></li>
+                    <li class="nav_element"><a href="#" class="nav_link">КОНТАКТЫ</a></li>
+                    <li class="nav_element"><a href="#" class="nav_link">НАПРАВЛЕНИЕ ДЕЯТЕЛЬНОСТИ</a></li>
+                </ul>
+                <search class="header-search"><img src="../MGO BRSM/icons/Upscale Sparkle.svg" alt=""></search>
+                <div class="choose_language">
+                    <a href="#" class="rus">RU</a>
+                    <span class="vertical_line">|</span>
+                    <a href="#" class="bel">BEL</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Контент превью -->
+    <div class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header_information">
+                    <header class="information__header">МИНСКИЙ ГОРОДСКОЙ <br> КОМИТЕТ ОО “БРСМ”</header>
+                    <main class="information__main">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br> Aenean</main>
+                </div>
+                <div class="header__social_media">
+                    <div class="four_media_icons">
+                        <a href="#" class="media_icon" ><img src="../MGO BRSM/icons/tg.svg" alt=""></a>
+                        <a href="#" class="media_icon"><img src="../MGO BRSM/icons/vk.svg" alt=""></a>
+                        <a href="#" class="media_icon"><img src="../MGO BRSM/icons/tt.svg" alt=""></a>
+                        <a href="#" class="media_icon"><img src="../MGO BRSM/icons/inst.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Новостной блок -->
+    <div class="news">
+        <div class="container">
+            <div class="news-content">
+                <img src="../MGO BRSM/img/орнамент.jpg" alt="ornament" class="ornament">
+                <div class="news_right_content">
+                    <div class="news_right_content__top">
+                        <div class="news__top__left">НОВОСТИ</div>
+                        <div class="news__top__right">
+                            <div class="news__top__right-text">Все новости</div>
+                            <a href="#" class="news__top__right-icon"></a>
+                        </div>
+                    </div>
+                    <div class="news_right_content__bottom">
+                        <!-- options - все карточки -->
+                        <div class="options">
+                            <!-- option - одна карточка -->
+                            <div class="option active">
+                                <!-- option__background -фон для карточки -->
+                                <div class="option__background bgactive" style="--optionBackground:url(../img/firstpik.jpg);"></div>
+                                <div class="shadow"></div>
+                                <!-- label - контент внутри карточки -->
+                                <div class="label">
+                                    <div class="info__content">
+                                        <div class="card-header">Выступление А.Г.Лукашенко на ВНС 2024</div>
+                                        <div class="card-date">12.04.2024</div>
+                                        <div class="card-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat.</div>
+                                    </div>
+                                    <!-- button, button__not_active - кнопка перехода на новость снизу -->
+                                    <div onclick="location.href='#'" class="card-footer__button"></div>
+                                    <button id="not_active_icon" class="card-footer__button__not_active"></button>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="option__background bgactive" style="--optionBackground:url(../img/secondpik.jpg);"></div>
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info__content">
+                                        <div class="card-header">Выступление А.Г.Лукашенко на ВНС 2024</div>
+                                        <div class="card-date">12.04.2024</div>
+                                        <div class="card-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat.</div>
+                                    </div>
+                                    <div onclick="location.href='#'" class="card-footer__button"></div>
+                                    <button id="not_active_icon" class="card-footer__button__not_active"></button>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="option__background bgactive" style="--optionBackground:url(../img/thirdpik.jpg);"></div>
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info__content">
+                                        <div class="card-header">Выступление А.Г.Лукашенко на ВНС 2024</div>
+                                        <div class="card-date">12.04.2024</div>
+                                        <div class="card-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat.</div>
+                                    </div>
+                                    <div onclick="location.href='#'" class="card-footer__button"></div>
+                                    <button id="not_active_icon" class="card-footer__button__not_active"></button>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="option__background bgactive" style="--optionBackground:url(../img/fourthpik.jpg);"></div>
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info__content">
+                                        <div class="card-header">Выступление А.Г.Лукашенко на ВНС 2024</div>
+                                        <div class="card-date">12.04.2024</div>
+                                        <div class="card-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat.</div>
+                                    </div>
+                                    <div onclick="location.href='#'" class="card-footer__button"></div>
+                                    <button id="not_active_icon" class="card-footer__button__not_active"></button>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="option__background bgactive" style="--optionBackground:url(../img/fifthpik.jpg);"></div>
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info__content">
+                                        <div class="card-header">Выступление А.Г.Лукашенко на ВНС 2024</div>
+                                        <div class="card-date">12.04.2024</div>
+                                        <div class="card-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat.</div>
+                                    </div>
+                                    <div onclick="location.href='#'" class="card-footer__button"></div>
+                                    <button id="not_active_icon" class="card-footer__button__not_active"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Направление деятельности -->
+    <div class="activity">
+        <div class="container">
+            <div class="activity-content">
+                <div class="activity-content__top">
+                    <img src="../MGO BRSM/icons/элемент_орнамента.svg" alt="">
+                    <span class="activity-vector">Направление Деятельности</span>
+                    <img src="../MGO BRSM/icons/элемент_орнамента.svg" alt="">
+                </div>
+                <div class="activity-content__bottom">
+                    <div class="switcher" id="switcher"></div>
+                    <div class="activity-information">
+                        <header class="activity_header">Гражданско-патриотическое</header>
+                        <main class="activity_main">Меняется эпоха. Буквально на глазах стремительно меняется темп жизни, появляются новые технологии, молодежь становится более продвинутой, все процессы проходят динамичнее. Но остается неизменной жизненная ценность любого государства – патриотизм его граждан, который начинается с любви к своей малой родине, к тому месту, где ты родился и вырос, с гордости за свою семью, школу, деревню, поселок или город, за людей, которые живут рядом. Белорусская молодежь ценит то, что имеет и понимает, что сегодня Беларусь – это островок мира, спокойствия и стабильности.</main>
+                    </div>
+                    <div class="activity-image"></div>
+                </div>
+                <div class="ornament-right"></div>
+            </div>
+            <hr class="ornament-bottom">
+        </div>
+    </div>  
+    <!-- Регистрация -->
+    <div class="registration">
+        <div class="container">
+            <div class="registration-content">
+                <div class="registration-images">
+                    <div class="reg-img_up">
+                        <div class="reg_img"></div>
+                        <div class="reg_img"></div>
+                    </div>
+                    <div class="reg-img_down">
+                        <div class="reg_img"></div>
+                        <div class="reg_img"></div>
+                    </div>
+                </div>
+                <div class="registration-main">
+                    <header class="reg-header">Республиканский молодежный <br>проект “100 идей для Беларуси”</header>
+                    <main class="reg-main"> Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis vitae leo porttitor suscipit taciti. Interdum elementum eget ornare diam fames. Curae ad auctor vitae vestibulum sollicitudin ultricies montes potenti. Purus ligula netus habitant ante posuere nisl dui. Elementum et amet egestas finibus mollis nam eleifend habitant. Elit conubia nunc donec pharetra nisl non sociosqu dictum non. Quam pharetra eleifend fringilla cras viverra torquent magnis accumsan. Habitant et morbi orci varius bibendum aliquam lacinia turpis? Suscipit duis mattis nec tortor lacus litora enim. Ullamcorper posuere laoreet eleifend, neque torquent eget eu sagittis. Erat nisl ex nisl accumsan euismod malesuada. Suspendisse imperdiet convallis diam urna interdum. Hac felis mauris fringilla luctus id euismod, pretium himenaeos ad. Praesent fermentum montes suscipit odio platea. Nec pellentesque taciti nam; metus posuere turpis nisi.Nec pellentesque taciti nam; metus posuere turpis nisi.</main>
+                    <button class="reg-button">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Четыре логотипа -->
+    <div class="logos">
+        <img src="../MGO BRSM/icons/ornament_element.svg" alt="" class="ornament-element">
+        <div class="container">
+            <div class="logos-content">
+                <img src="../MGO BRSM/icons/золотой логотип.svg" alt="" class="logos-logo">
+                <img src="../MGO BRSM/icons/золотой логотип.svg" alt="" class="logos-logo">
+                <img src="../MGO BRSM/icons/золотой логотип.svg" alt="" class="logos-logo">
+                <img src="../MGO BRSM/icons/золотой логотип.svg" alt="" class="logos-logo">
+            </div>
+        </div>
+        <img src="../MGO BRSM/icons/ornament_element.svg" alt="" class="ornament-element_bottom">
+    </div>
+    <!-- 2025 -->
+    <div class="year">
+        <div class="container">
+            <div class="year-content"></div>
+        </div>
+    </div>
+    <!-- Интернет-ресурсы -->
+    <div class="internet-resources">
+        <div class="container">
+            <div class="internet-resources_content">
+                <img src="../MGO BRSM/icons/Frame.svg" alt="" class="internet-line">
+                <div class="internet-middle">
+                    <header class="middle-header">
+                        Интернет-ресурсы
+                    </header>
+                    <main class="middle-main">
+                        <div class="middle-left">
+                            <div class="left-top"><img src="../MGO BRSM/icons/элемент_орнамента.svg" alt="">Президент Республики Беларусь</div>
+                            <div class="left-bottom"><img src="../MGO BRSM/icons/элемент_орнамента.svg" alt="">Министерство образования Республики Беларусь</div>
+                        </div>
+                        <div class="middle-right"><img src="../MGO BRSM/icons/элемент_орнамента.svg" alt="">Национальный правовой Интернет-портал Республики Беларусь</div>
+                    </main>
+                </div>
+                <div class="internet-right">
+                    <img src="../MGO BRSM/icons/Frame_bottom.svg" class="internet-line_bottom" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Контакты перед футером -->
+    <div class="contacts">
+        <div class="container">
+            <div class="contacts-content">
+                <div class="short-info">
+                    <img src="../MGO BRSM/icons/золотой логотип.svg" alt="" class="contacts-logo">
+                    <header class="short-info_header">Коротко о нас</header>
+                    <main class="short-info_main">Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Doloribus accusamus expedita repellat.</main>
+                </div>
+                <div class="contacts-block">
+                    <header class="contacts-header">Контакты</header>
+                    <div class="contacts-row"><img src="../MGO BRSM/icons/adress.svg" alt="" class="row-icon">Адрес: 220029, г.Минск, <br> ул. Киселёва, 24/201 </div>
+                    <div class="contacts-row"><img src="../MGO BRSM/icons/phone.svg" alt="" class="row-icon">Телефон: +375 (17) 379 85 54, <br> +375 (17) 316 40 20 </div>
+                    <div class="contacts-row"><img src="../MGO BRSM/icons/mail.svg" alt="" class="row-icon">Почта: minsk.gkom@gmail.com</div>
+                </div>
+                <div class="fast-links">
+                    <header class="fast-links_header">Быстрые ссылки</header>
+                    <a href="#" class="fast-links_link">О нас</a>
+                    <a href="#" class="fast-links_link">Наши проекты</a>
+                    <a href="#" class="fast-links_link">Контакты</a>
+                    <a href="#" class="fast-links_link">Направления деятельности</a>
+                </div>
+                <div class="work-time">
+                    <header class="work-time_header">Режим работы:</header>
+                    <div class="work-time_info">
+                        ПН-ПТ: с 10:00 до 19:00 <br>
+                        СБ-ВС: Выходной <br>
+                        Обеденный перерыв: 14:00 - 15:00.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer - end. -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-icons">
+                    <img src="../MGO BRSM/icons/tg.svg" alt="" class="footer-icon">
+                    <img src="../MGO BRSM/icons/vk.svg" alt="" class="footer-icon">
+                    <img src="../MGO BRSM/icons/tt.svg" alt="" class="footer-icon">
+                    <img src="../MGO BRSM/icons/inst.svg" alt="" class="footer-icon">
+                </div>
+                <div class="footer-text">© Белорусский республиканский союз молодежи, 2025</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Подключение js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/switcher.js"></script>
+    <script  src="js/cards.js"></script>
+</body>
+</html>
